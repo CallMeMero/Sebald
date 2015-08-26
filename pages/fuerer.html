@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset = "utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>St.Sebald</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<!-- Stylesheet einbinden -->
+	<link rel="stylesheet" type="text/css" href="../myStyle.css"/>
+	<!-- Miniicon in der Tableiste des Browsers -->
+	<link rel="shortcut icon" href="../img/favicon.ico">
+	<!-- JavaScripts -->
+	<!-- JavaScript fuer das ein- und ausblenden der Sensordaten -->
+	<script type="text/javascript" src="../scripts/show_hide_boxes.js"></script>
+	<!-- JavaScript fuer das abfragen der aktuellen Sensordaten -->
+	<script type="text/javascript" src="../scripts/get_current_values_nIV.js"></script>
+	<!-- Skript zum aktualisieren der Bilder -->
+	<script type="text/javascript" src="../scripts/reload_img_nIV.js"></script>
+	<!-- fix .navbar to top when scrolled -->
+	<script type="text/javascript" src="../scripts/navbar_fixed_top.js"></script>
+</head>
+<body>
+	<!-- Kopfzeile -->
+	<div class="container">
+		<div class="header  rounded-corner-top">
+			<img id="logo" src="../img/StSebald.jpg" alt="St.Sebald" width="110px" height="120px" align="left"/>
+			<img id="logo" src="../img/th_nuernberg_resized.png" alt="Technische Hochschule Nuernberg" style="margin-left:60px;"/>
+			<img id="logo" src="../img/BayrischesLandesamt.png" alt="Bayrisches Landesamt" width="190px" height="50px" style="margin-left:60px;"/>
+			<img id="logo" src="../img/DBU.jpeg" alt="Deutsche Bundesstiftung Umwelt" width="167px" height="120px" align="right"/>
+			<h1>Klimastabilisierung St. Sebald</h1>
+		</div>
+	</div>
+	<!-- Navigationsleiste -->
+	<div class="container">
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="../index.html">Startseite</a></li>
+						<li><a href="projekt.html">Projektziele</a></li>
+						<li class="dropdown active">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#" >Fenster
+								<span class="caret"></span></a>
+
+								<ul class="dropdown-menu">
+									<li class="active"><a href="fuerer.html">F&uuml;rer</a></li>
+									<li><a href="behaim.html">Behaim</a></li>
+									<li><a href="schuerstab.html">Sch&uuml;rstab</a></li>
+									<li class="divider"></li>
+									<li><a href="../chart/chart_selectable_v2.html"><span class="glyphicon glyphicon-stats"></span> Sensordaten</a></li>
+								</ul>
+
+							</li>
+							<li><a href="fensterplan.html">Fensterplan</a></li>
+							<li><a href="technik.html">Messeinrichtung</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="partner.html">Projektpartner</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- Hauptbereich -->
+		<div class="container">
+			<div class="content rounded-corner-bottom">
+				<h1>F&uuml;rer Fenster</h1>
+				<!-- Bereich fuer das Thermobild -->
+				<div class="floatleft clearing" style="width:450px; height:600px;">
+					<!-- Dieses div wird um 90 grad rotiert um das bild aufrecht darzustellen -->
+					<div class="rotateCCW90">
+						<!-- Thermobild einfuegen -->
+						<img src="../data/Fuerer/imgThermo.jpg?"  id="thermocam" alt="thermocam" width="600px" height="450px"/>
+					</div>
+					<!-- Hauptbox fuer die Sensordaten -->
+					<div style="position:relative; bottom: 230px; left: 37%; width:200px;">
+						<div class="SNbox">
+							<!-- Textbereich fuer die Daten -->
+							<p  id="c6" style="position:absolute;"></p>
+						</div>
+						<!-- Sensorbezeichnung -->
+						<div class="numberCircle" style="left: -10px;  bottom: 8px;">c6</div>
+					</div>
+					<!-- Die auskommentierten Sensoren sind im Moment fehlerhaft -->
+					<!--
+					<div style="position:relative; bottom: 60px; left: 23%;">
+						<div class="SNbox">
+							<p id="a1" style="position:absolute;"></p>
+						</div>
+						<div class="numberCircle" style="bottom: 8px; left: -10px;">a1</div>
+					</div>
+					-->
+					<div style="width: 120px; height 40px; position:relative; bottom: 120px; left: 2%;">
+						<div class="SNbox">
+							<p id="a3" style="position:absolute;"></p>
+						</div>
+						<div class="numberCircle" style="bottom: 8px; left: 78px;">a3</div>
+					</div>
+					<!--
+					<div style="position:relative; bottom: 340px; left: 5%;">
+						<div class="SNbox">
+							<p id="a5" style="position:absolute;"></p>
+						</div>
+					<div class="numberCircle" style="bottom: 8px; left: 78px;">a5</div>
+					</div> -->
+					<div style="position:relative; bottom: 380px; left: 8%;">
+						<div class="SNbox">
+							<p id="a7" style="position:absolute;"></p>
+						</div>
+						<div class="numberCircle" style="bottom: 8px; left: 78px;">a7</div>
+					</div>
+					<!--
+					<div style="position:relative; bottom: 620px; left: 12%;">
+						<div class="SNbox">
+							<p id="a10" style="position:absolute;"></p>
+						</div>
+						<div class="numberCircle" style="bottom: 8px; left: 78px;">a10</div>
+					</div>
+					-->
+					</div>
+
+					<!-- Bereich fuer das Farbbild -->
+					<div class="floatright" style="width:450px; height:600px;">
+						<!-- Dieses div wird um 90 grad rotiert -->
+						<div class="rotateCW90">
+							<!-- Farbbild anzeigen -->
+							<img src="../data/Fuerer/imgRGB.jpg?" id="rgbcam" name="rgbcam" width="600px" height="450px"/>
+						</div>
+					</div>
+					<div style="float:right; width:450px;">
+						<p>Ansicht: RGB-Kanal</p>
+					</div>
+					<div style="float:left; width: 450;">
+						<p>Ansicht: Temperatur-Kanal (Falschfarben)</p>
+					</div>
+				</div>
+			</div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset = "utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>St.Sebald</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<!-- Stylesheet einbinden -->
+	<link rel="stylesheet" type="text/css" href="../myStyle.css"/>
+	<!-- Miniicon in der Tableiste des Browsers -->
+	<link rel="shortcut icon" href="../img/favicon.ico">
+	<!-- JavaScripts -->
+	<!-- fix .navbar to top when scrolled -->
+	<script type="text/javascript" src="../scripts/navbar_fixed_top.js"></script>
+</head>
+<body>
+	<!-- Kopfzeile -->
+	<div class="container">
+		<div class="header rounded-corner-top">
+			<img id="logo" src="../img/StSebald.jpg" alt="St.Sebald" width="110px" height="120px" align="left"/>
+			<img id="logo" src="../img/th_nuernberg_resized.png" alt="Technische Hochschule Nuernberg" style="margin-left:60px;"/>
+			<img id="logo" src="../img/BayrischesLandesamt.png" alt="Bayrisches Landesamt" width="190px" height="50px" style="margin-left:60px;"/>
+			<img id="logo" src="../img/DBU.jpeg" alt="Deutsche Bundesstiftung Umwelt" width="167px" height="120px" align="right"/>
+			<h1>Klimastabilisierung St. Sebald</h1>
+		</div>
+	</div>
+	<!-- Navigationsleiste -->
+	<div class="container">
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="../index.html">Startseite</a></li>
+						<li><a href="projekt.html">Projektziele</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#" >Fenster
+								<span class="caret"></span></a>
+
+								<ul class="dropdown-menu">
+									<li><a href="fuerer.html">F&uuml;rer</a></li>
+									<li><a href="behaim.html">Behaim</a></li>
+									<li><a href="schuerstab.html">Sch&uuml;rstab</a></li>
+									<li class="divider"></li>
+									<li><a href="../chart/chart_selectable_v2.html"><span class="glyphicon glyphicon-stats"></span> Sensordaten</a></li>
+								</ul>
+
+							</li>
+							<li><a href="fensterplan.html">Fensterplan</a></li>
+							<li class="active"><a href="technik.html">Messeinrichtung</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="partner.html">Projektpartner</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- Hauptbereich -->
+		<div class="container">
+			<div class="content rounded-corner-bottom">
+			<h1>Optische Systeme St.Sebald</h1>
+			<div class="row">
+				<div class="col-md-6">
+					<img src="../img/Prototyp_01.png" width="100%" height="400px" alt="Messaufbau">
+					<p>Abbildung zeigt das i.MX53 Quickstart Board in Verbindung mit einer PI200 Thermokamera der Firma Optris.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="../img/Board_Nord.JPG" width="100%" height="400px" alt="CamBoard_Nord">
+					<p>Abbildung zeigt das Udoo Quad Board in Verbindung mit einer PI400 Thermokamera der Firma Optris und eier Logitech C920 Webcam.</p>
+				</div>
+			</div>
+			<p>
+				Derzeit befindet sich zwei Low-Power Rechner in Verbindung mit Thermokameras vor Ort.
+				Die Rechner stellen &uuml;ber das Internet die Bilder von	den Kameras zu Verf&uuml;gung. Gleichzeitig werden die Bilder auf einer SD-Karte gespeichert um eine Langzeit&uuml;berwachung zu erm&ouml;glichen.
+			</p>
+			<h2 style="margin-bottom: 0px; margin-top: 30px;">Sch&uuml;rstab- und Haller-Fenster</h2>
+			<div class="row">
+
+
+				<div class="col-md-4">
+							<h3>Freescale i.MX53</h3>
+							<ul>
+								<li>ARM Cortex-A8 Prozessor</li>
+								<li>1GB DDR3 SDRAM memory</li>
+								<li>2x USB 2.0</li>
+								<li>Ethernet (10/100T) connector</li>
+								<li>SATA 7-pin data connector</li>
+								<li>VGA video output</li>
+								<li>.....</li>
+							</ul>
+							<p><i>mehr Informationen unter:</i>
+								<br>
+								<a href="http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=IMX53QSB">freescale i.MX53 Quickstart Board</a>
+							</p>
+						</div>
+							<div class="col-md-4">
+							<h3>Optris PI200</h3>
+							<ul>
+								<li>Aufl&ouml;sung Thermo-Sensor: 160 x 120 Pixel</li>
+								<li>Aufl&ouml;sung RGB-Sensor: 596 x 447 Pixel</li>
+								<li>Optik Thermo-Sensor: 72&deg;</li>
+								<li>Bildfrequenz Thermo-Sensor: 128 Hz</li>
+								<li>Bildfrequenz RGB-Sensor: 32 Hz</li>
+								<li>Genauigkeit: +/- 2 &deg;C</li>
+								<li>Spektralbereich: 7,5 bis 13 &mu;m</li>
+							</ul>
+							<p><i>mehr Informationen unter:</i>
+								<br>
+								<a href="http://www.optris.de/infrarotkamera-pi200">Optris PI200 Infrarotkamera</a>
+							</p>
+						</div>
+						<div class="col-md-4"></div>
+					</div>
+						<h2 style="margin-bottom: 0px;">F&uuml;rer-Fenster</h2>
+						<div class="row">
+							<div class="col-md-4">
+							<h3>Udoo Quad Board</h3>
+							<ul>
+								<li>ARM Cortex-A9 Prozessor</li>
+								<li>1GB DDR3 SDRAM memory</li>
+								<li>ARM Cortex-M3 CPU
+									<li>76 fully available GPIO: 62 digital + 14 digital/analog</li>
+									<li>Ethernet (10/100/1000 MBit) connector</li>
+									<li>Wifi Modul</li>
+									<li>.....</li>
+								</ul>
+								<p><i>mehr Informationen unter:</i>
+									<br>
+									<a href="http://shop.udoo.org/eu/product/udoo-quad.html">UDOO Quad</a>
+								</p>
+</div>
+							<div class="col-md-4">
+								<h3>Optris PI400</h3>
+								<ul>
+									<li>Aufl&ouml;sung: 382 x 288 Pixel</li>
+									<li>Optik: 72&deg;</li>
+									<li>Bildfrequenz: 80 Hz</li>
+									<li>Empfindlichkeit: +/- 80 mK</li>
+									<li>Genauigkeit: +/- 2 &deg;C</li>
+									<li>Spektralbereich: 7,5 bis 13 &mu;m</li>
+								</ul>
+								<p><i>mehr Informationen unter:</i>
+									<br>
+									<a href="http://www.optris.de/infrarotkamera-pi400">Optris PI400 Infrarotkamera</a>
+								</p>
+</div>
+							<div class="col-md-4">
+								<h3>Logitech HD Pro Webcam C920</h3>
+								<ul>
+									<li>Aufl&ouml;sung RGB-Sensor: 1920 x 1080 Pixel</li>
+									<li>Bildfrequenz: 30 Hz</li>
+								</ul>
+								<p><i>mehr Informationen unter:</i>
+									<br>
+									<a href="http://www.logitech.com/de-de/product/hd-pro-webcam-c920">Logitech C920</a>
+								</p>
+</div>
+
+
+				</div>
+			</div>
+
+			</div>
+			</html>
