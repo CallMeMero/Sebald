@@ -30,6 +30,7 @@ body {
   background-color: #CFD8DC;
 }
 
+/*Style the Navbar*/
 .navbar {
   background-color: white;
   margin-bottom: 0px;
@@ -37,12 +38,19 @@ body {
   border-bottom: 1px solid #CFD8DC;
   border-left: 0px;
   border-right: 0px;
+  min-height: 30px !important;
 }
 
 .navbar a {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 12px;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top: 6px !important;
+    padding-bottom: 0 !important;
+    height: 30px;
 }
 
 .content {
